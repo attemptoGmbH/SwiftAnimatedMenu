@@ -15,6 +15,9 @@
 		61ACBE68215E3DAE0071EF6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61ACBE66215E3DAE0071EF6F /* LaunchScreen.storyboard */; };
 		61ACBE73215E3DAE0071EF6F /* AnimatedMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACBE72215E3DAE0071EF6F /* AnimatedMenuTests.swift */; };
 		61ACBE7E215E3DAE0071EF6F /* AnimatedMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACBE7D215E3DAE0071EF6F /* AnimatedMenuUITests.swift */; };
+		61ACBE8D215E3F290071EF6F /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ACBE8C215E3F290071EF6F /* Macaw.framework */; };
+		61ACBE8F215E3F7B0071EF6F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACBE8E215E3F7B0071EF6F /* Menu.swift */; };
+		61ACBE91215E422B0071EF6F /* Macaw.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61ACBE8C215E3F290071EF6F /* Macaw.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		61ACBE92215E422B0071EF6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61ACBE91215E422B0071EF6F /* Macaw.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		61ACBE57215E3DAB0071EF6F /* AnimatedMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61ACBE5A215E3DAC0071EF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,8 @@
 		61ACBE79215E3DAE0071EF6F /* AnimatedMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61ACBE7D215E3DAE0071EF6F /* AnimatedMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedMenuUITests.swift; sourceTree = "<group>"; };
 		61ACBE7F215E3DAE0071EF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61ACBE8C215E3F290071EF6F /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
+		61ACBE8E215E3F7B0071EF6F /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61ACBE8D215E3F290071EF6F /* Macaw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +103,7 @@
 				61ACBE71215E3DAE0071EF6F /* AnimatedMenuTests */,
 				61ACBE7C215E3DAE0071EF6F /* AnimatedMenuUITests */,
 				61ACBE58215E3DAB0071EF6F /* Products */,
+				61ACBE8B215E3F290071EF6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,7 @@
 			children = (
 				61ACBE5A215E3DAC0071EF6F /* AppDelegate.swift */,
 				61ACBE5C215E3DAC0071EF6F /* ViewController.swift */,
+				61ACBE8E215E3F7B0071EF6F /* Menu.swift */,
 				61ACBE5E215E3DAC0071EF6F /* Main.storyboard */,
 				61ACBE64215E3DAE0071EF6F /* Assets.xcassets */,
 				61ACBE66215E3DAE0071EF6F /* LaunchScreen.storyboard */,
@@ -128,6 +150,14 @@
 			path = AnimatedMenuUITests;
 			sourceTree = "<group>";
 		};
+		61ACBE8B215E3F290071EF6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61ACBE8C215E3F290071EF6F /* Macaw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +168,7 @@
 				61ACBE53215E3DAB0071EF6F /* Sources */,
 				61ACBE54215E3DAB0071EF6F /* Frameworks */,
 				61ACBE55215E3DAB0071EF6F /* Resources */,
+				61ACBE92215E422B0071EF6F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +292,7 @@
 			files = (
 				61ACBE5D215E3DAC0071EF6F /* ViewController.swift in Sources */,
 				61ACBE5B215E3DAC0071EF6F /* AppDelegate.swift in Sources */,
+				61ACBE8F215E3F7B0071EF6F /* Menu.swift in Sources */,
 				61ACBE63215E3DAC0071EF6F /* AnimatedMenu.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9GUJMQHJN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AnimatedMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +490,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9GUJMQHJN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AnimatedMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
